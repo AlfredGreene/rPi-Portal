@@ -1,0 +1,102 @@
+body {
+	background-color: #333;
+	margin: 0;
+	padding: 0;
+}
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.dropdown {
+	width: 60%;
+	height: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+	overflow: hidden;
+	background-color: rgba(175,175,175,0.02);
+	border: thin solid rgba(0,0,0,0.1);
+	padding: 10px;
+	color: rgba(255,255,255,0.8);
+    font-size: 26px;
+}
+.t_upload {
+	margin-top: -0.5%;
+}
+.t_upload img {
+	margin-top: -10px;
+	height: 20px;
+}
+.t_upload_click {
+	color: rgba(175,175,175,0.2);
+}
+.t_upload_rotate {
+	-ms-transform: rotate(180deg);
+    	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.t_upload_click, .t_upload_rotate, .vol {
+   -webkit-transition: -webkit-transform 1s,opacity 1s,background 1s,width 1s,height 1s,font-size 1s, border 1s, color 1s,box-shadow 1s, text-shadow 1s;
+    -o-transition-property: width,height,-o-transform,background,font-size,opacity,border,color,box-shadow,text-shadow;
+    -o-transition-duration: 1s,1s,1s,1s,1s,1s,1s,1s,1s,1s;
+    -moz-transition-property: width,height,-o-transform,background,font-size,opacity,border,color,box-shadow,text-shadow;
+    -moz-transition-duration: 1s,1s,1s,1s,1s,1s,1s,1s,1s,1s;
+    transition-property: width,height,transform,background,font-size,opacity,border,color,box-shadow,text-shadow;
+    transition-duration: 1s,1s,1s,1s,1s,1s,1s,1s,1s,1s;
+}
+.a_center {
+	min-width: 300px;
+	max-width: 100%;
+	width: 100%;
+	border: thin solid rgba(0,0,0,0.2);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -1%;
+	box-shadow: 0 0 5px rgba(0,0,255,0.3), 0 0 8px rgba(255,0,0,0.2) inset;
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 3px;
+}
+.f_box {
+	width: calc(100% - 9px);
+	height: calc(100% - 9px);
+	padding: 2px;
+	border: thin solid rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.1);
+}
+.f_box:hover {
+	background-color: rgba(255,255,255,0.05);
+}
+.f_box p {
+	color: rgba(255,255,255,0.8);
+	font-size: 18px;
+	margin-left: calc(2% - 5px);
+	cursor: pointer;
+}
+.f_box {
+	font-size: 18px;
+}
+.music_title {
+	color: rgba(255,255,255,0.5);
+	white-space: nowrap;
+}
+.show_files {
+	overflow-y: auto;
+	overflow-x: hidden;
+	width: 100%;
+	height: 340px;
+	margin-top: 10px;
+}
+.show_files table {
+	border: thin solid rgba(0,0,0,0.3);
+}
+.show_files table td:nth-child(even) {
+	background-color: rgba(255,255,255,0.1);
+}
+.show_files table td:nth-child(odd) {
+	background-color: rgba(0,0,0,0.1);
+}
+
