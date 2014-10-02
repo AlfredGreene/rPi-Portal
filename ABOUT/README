@@ -1,0 +1,32 @@
+#Configuration file for '/etc/mpd.conf'
+#After you've putted the information into the file
+#you'll have to type in the terminal: sudo service mpd restart
+#You may now listen from other computers/phones at the MPD servers address like this:
+#http://0.0.0.0:8000/stream.mp3
+
+#Note that on a Raspberry Pi PulseAudio isn't playing well.
+
+audio_output {
+        type            "httpd"
+        name            "Raspberry Pi RadioStation"
+        port            "8000"
+        encode          "lame"
+        mount           "/stream.mp3"
+        quality         "2.0"
+        format          "44100:16:1"
+        mixer_device    "default"
+        mixer_control   "PCM"
+        mixer_index     "2"
+	mixer_type      "software"
+}
+audio_output {
+        type            "alsa"
+        name            "ALSA Sound"
+        device          "hw:0,0"
+        format          "44100:16:2"
+        mixer_device    "default"
+        mixer_control   "PCM"
+        mixer_index     "1"
+        mixer_type      "software"
+}
+
